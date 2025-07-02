@@ -6,7 +6,7 @@ function FindProxyForURL(url, host) {
 
   // Proxy only example.com
   if (shExpMatch(host, "*.pulsars.nanograv.org")) {
-    return "PROXY proxy.pulsars.nanograv.org:8080";
+    return "PROXY 127.0.0.1:8080";
   }
 
   // Default rule: direct connection
